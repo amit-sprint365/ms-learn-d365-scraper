@@ -1,8 +1,11 @@
 name: Scrape D365 Documentation
 
 on:
-  schedule:
-    - cron: '0 2 * * 1'
+  # Trigger via API endpoint
+  repository_dispatch:
+    types: [scrape-docs]
+  
+  # Keep manual trigger option in GitHub UI
   workflow_dispatch:
 
 jobs:
