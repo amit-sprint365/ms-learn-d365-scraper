@@ -1,0 +1,13 @@
+{
+  "name": "ms-finance-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "express": "^4.22.1",
+    "node-fetch": "^3.3.2"
+  }
+}
